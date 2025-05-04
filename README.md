@@ -36,6 +36,14 @@ To design and implement an image processing system on the Nexys 4 DDR FPGA that:
 
 ### 4. Sobel Filter Core
 - Apply Sobel X and Y convolution kernels
+- Sobel X Kernel
+[-1 0 1]
+[-2 0 2]
+[-1 0 1]
+- Sobel Y Kernel
+[-1 -2 -1]
+[ 0 0 0]
+[ 1 2 1]
 - Compute edge intensity as:
 - Edge = |Gx| + |Gy|
 - Clamp final output to 8-bit range (0–255)
