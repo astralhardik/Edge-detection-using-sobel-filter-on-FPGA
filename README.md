@@ -27,7 +27,8 @@ To design and implement an image processing system on the Nexys 4 DDR FPGA that:
 - Output RGB pixel stream from BRAM
 
 ### 2. Grayscale Converter
-- Convert RGB to 8-bit grayscale using:  
+- Convert RGB to 8-bit grayscale using:
+- Gray = 0.299R + 0.587G + 0.114B
 
 ### 3. Line Buffer & Window Generator
 - Implement dual line buffers to generate a 3x3 pixel window
@@ -35,7 +36,8 @@ To design and implement an image processing system on the Nexys 4 DDR FPGA that:
 
 ### 4. Sobel Filter Core
 - Apply Sobel X and Y convolution kernels
-- Compute edge intensity as:  
+- Compute edge intensity as:
+- Edge = |Gx| + |Gy|
 - Clamp final output to 8-bit range (0–255)
 
 ### 5. Display Controller
